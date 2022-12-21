@@ -1,5 +1,8 @@
 <?php
-include_once '../config/Conexion.php';
+require '../config/Conexion.php';
+
+//iniciar la sesion
+session_start();
 
 //$conex = new Conexion(); //Creamos la instancia para conectarnos con la clase
 
@@ -14,10 +17,10 @@ $password = (isset($_POST['password'])) ? $_POST['password'] : '';
 
 //Encirptacion de  la password a MD5, la idea es compararla con la DB
 
-$pass = md5($password);
+$password = md5($password);
 
 //Creamos la consulta  y la ejecutamos a la DB entregandole los parametros recibidos  desde la vista
-$sql = "SELECT * FROM usuarios WHERE usuario='$usuario' AND password='$pass'";
+$sql = "SELECT * FROM usuarios WHERE usuario='$usuario' AND password='$password'";
 $result = $conexion->query($sql);
 
 if($result->num_rows >= 1){

@@ -26,14 +26,13 @@ $('#formlogin').submit(function(e){
             datatype: "json",
             data: {usuario:usuario, password:password},
             //generar las alertas con SweetAlert 2
-            succes:function(data){
+            success:function(data){
                 if(data == "null"){
                     Swal.fire({
                         type: 'error',
                         icon: 'error',
                         title: 'Usuario y/o password incorrecto',
-                    });
-                    
+                    });                 
                 }else{
                     Swal.fire({
                         type: 'success',
@@ -43,11 +42,11 @@ $('#formlogin').submit(function(e){
                         confirmButtonText: 'Ingresar'
                     }).then((result) => {
                         if(result.value){
-                            window.location.href ="../vistas/login.php";
+                            window.location.href ="../vistas/inicio.php";
                         }
                     })
                 }
             }
-        })
+        });
      }
  });

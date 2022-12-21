@@ -19,8 +19,3 @@
     <title>Login PHP Bootstrap 5 2022</title>
 </head>
 <body>
-    
-</body>
-
-
-</html>

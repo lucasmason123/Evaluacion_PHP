@@ -20,21 +20,13 @@
                                 <input type="password" name="txtPassword" class="form-control"  id="password" placeholder="****">
                             </div>
 
-                            <div class="form-group´text-center">
+                            <div class="form-group text-center">
                                 <input type="submit" name="submit" class="btn btn-dark btn-lg btn-block" value="Conectar">
 
                             </div>
 
                         </form>
-
                     </div>
-
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-
                 </div>
             </div>
         </div>
