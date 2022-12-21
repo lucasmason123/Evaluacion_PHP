@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
     <!-- Sweetalert 2 CSS -->
     <link rel="stylesheet" href="../css/sweetalert2.min.css">
     <!-- CSS Personal -->
+    <link rel="stylesheet" href="../css/estilo.css">
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.2.js" 
     integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
@@ -20,4 +21,6 @@
 <body>
     
 </body>
+
+
 </html>
